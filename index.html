@@ -3,10 +3,14 @@
 
 <script>
     
-    function changeColor() 
+    function changeColor(colour1 , colour2) 
     {
-        document.body.style.backgroundColor = "#b76666";
-        document.body.style.color = "#7d1e1e";
+        /*document.body.style.backgroundColor = "#b76666";*/
+        document.body.style.backgroundColor = colour1;
+
+        /*document.body.style.color = "#7d1e1e";*/
+        document.body.style.color = colour2;
+
     }
 
 </script>
@@ -19,9 +23,11 @@
         <title>cool dudes only</title>
 
     </head>
+    
     <link rel="icon" href="https://images.icon-icons.com/61/PNG/96/website_web_12218.png">
     
     <body style ="background-color: #66a3b7; color: #346b9a;">
+
 
         <style type="text/css">
         body{
@@ -42,7 +48,9 @@
         <p> Github leaves alot to be desired however</p>
 
 
-        <button onclick="changeColor()" style="background-color: #b76666; color: #7d1e1e;">change to red</button>
+        <button onclick="changeColor('#b76666', '#7d1e1e')" style="background-color: #b76666; color: #7d1e1e;">change to red</button>
+        <button onclick="changeColor('#934fc8', '#491a66')" style="background-color: #934fc8; color: #491a66;">change to purple if ur some sort of freak loser</button>
+
 
 
         <p> if you agree the blue was a better choice, please refresh the page</p>
